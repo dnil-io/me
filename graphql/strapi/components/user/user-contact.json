@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_user_user_contacts",
+  "info": {
+    "name": "User Contact",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "contacts": {
+      "collection": "contact"
+    }
+  }
+}

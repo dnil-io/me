@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_contacts",
+  "info": {
+    "name": "User Contact"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "contact": {
+      "via": "user_contacts",
+      "model": "contact"
+    },
+    "person": {
+      "via": "user_contacts",
+      "model": "person"
+    }
+  }
+}

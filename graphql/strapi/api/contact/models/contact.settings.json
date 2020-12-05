@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "hobbies",
+  "collectionName": "contacts",
   "info": {
-    "name": "hobby",
+    "name": "contact",
     "description": ""
   },
   "options": {
@@ -11,10 +11,10 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "name": {
+    "label": {
       "type": "string"
     },
-    "placeholder_image": {
+    "icon": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -25,12 +25,9 @@
       "plugin": "upload",
       "required": false
     },
-    "description": {
-      "type": "string"
-    },
-    "people": {
-      "collection": "person",
-      "via": "hobbies"
+    "user_contacts": {
+      "collection": "user-contact",
+      "via": "contact"
     }
   }
 }

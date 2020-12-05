@@ -6,12 +6,11 @@
   </div>
 </template>
 
-<script>
-import Vue from 'vue'
-import PersonList from '~/components/PersonList.vue'
+<script lang="ts">
+import Vue from 'vue';
+import PersonList from '~/components/PersonList.vue';
 
-export default Vue.extend({
-  components: { PersonList },})
+export default Vue.extend({ components: { PersonList } });
 </script>
 
 <style>

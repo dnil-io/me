@@ -6,6 +6,16 @@ query peopleListQuery($id: String!) {
     birthday
     relationship_status
     headline
+    profile_color
+    user_contacts {
+      link
+      contact {
+        label
+        icon {
+          url
+        }
+      }
+    }
     hobbies {
       name
       placeholder_image {

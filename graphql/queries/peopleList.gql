@@ -2,6 +2,7 @@ query peopleListQuery {
   people {
     name
     id
+    profile_color
     profile_picture {
       url
     }

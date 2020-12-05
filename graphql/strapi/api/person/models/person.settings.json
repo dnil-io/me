@@ -46,9 +46,17 @@
       ]
     },
     "hobbies": {
-      "collection": "hobby",
       "via": "people",
+      "collection": "hobby",
       "dominant": true
+    },
+    "profile_color": {
+      "type": "string",
+      "regex": "^#(?:[0-9a-fA-F]{3}){1,2}$"
+    },
+    "user_contacts": {
+      "collection": "user-contact",
+      "via": "person"
     }
   }
 }
