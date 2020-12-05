@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "Person"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "name": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "date"
+    },
+    "profile_picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "introduction": {
+      "type": "richtext"
+    },
+    "headline": {
+      "type": "string"
+    },
+    "relationship_status": {
+      "type": "enumeration",
+      "enum": [
+        "single",
+        "taken",
+        "complicated"
+      ]
+    },
+    "hobbies": {
+      "collection": "hobby",
+      "via": "people",
+      "dominant": true
+    }
+  }
+}

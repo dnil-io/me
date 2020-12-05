@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hobbies",
+  "info": {
+    "name": "hobby"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "started": {
+      "type": "date"
+    },
+    "placeholder_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "string"
+    },
+    "people": {
+      "via": "hobbies",
+      "collection": "person"
+    }
+  }
+}
