@@ -1,5 +1,14 @@
 # me
 
+Small late night project to get to know the 
+
+ - NuxtJS
+ - VueJS with Typescript
+ - Apollo (GraphQL Client)
+ - Strapi
+
+tech-stack. :)
+
 ## Build Setup
 
 ```bash

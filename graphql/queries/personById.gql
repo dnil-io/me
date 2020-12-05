@@ -1,0 +1,20 @@
+query peopleListQuery($id: String!) { 
+  people(where: {id: $id}) {
+    name
+    introduction
+    email
+    birthday
+    relationship_status
+    headline
+    hobbies {
+      name
+      placeholder_image {
+        url
+      }
+      description
+    }
+    profile_picture {
+      url
+    }
+  }
+}

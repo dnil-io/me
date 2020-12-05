@@ -1,45 +1,26 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        me
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <person-list grid />
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
+import PersonList from '~/components/PersonList.vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  components: { PersonList },})
 </script>
 
 <style>
 .container {
-  margin: 0 auto;
+  margin: 5rem+ auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   text-align: center;
 }
 

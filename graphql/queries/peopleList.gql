@@ -1,0 +1,9 @@
+query peopleListQuery { 
+  people {
+    name
+    id
+    profile_picture {
+      url
+    }
+  }
+}
